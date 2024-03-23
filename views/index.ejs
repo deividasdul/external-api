@@ -1,0 +1,16 @@
+<%- include("./partials/header.ejs") %>
+  <body>
+    <a href="new/" class="new" type="submit">New</a>
+    <% posts.forEach((post) => { %>
+    <div class="post-container">
+      <h1><%= post.postTitle %></h1>
+      <hr />
+      <p><%= post.postContent %></p>
+      <hr />
+      <h2>By: <%= post.postAuthor %></h2>
+      <a class="edit" href="edit/<%= post.id %>" type="submit">Edit</a>
+      <a class="delete" href="delete/<%= post.id %>" type="submit">Delete</a>
+    </div>
+    <% }) %>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css" />
+    <title>Post Create</title>
+  </head>
+  <body>
+    <form
+      class="edit-form"
+      method="POST"
+      action="/new"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <input
+        placeholder="Title"
+        id="title"
+        name="title"
+        type="text"
+        class="input"
+        required
+      />
+      <textarea
+        class="input"
+        name="content"
+        placeholder="Something..."
+        id="content"
+        cols="50"
+        rows="15"
+        required
+      ></textarea>
+      <input
+        placeholder="Author"
+        id="author"
+        name="author"
+        type="text"
+        class="input"
+        required
+      />
+      <button class="new btn" type="submit">Create</button>
+    </form>
+  </body>
+</html>
